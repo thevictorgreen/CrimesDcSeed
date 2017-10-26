@@ -4,21 +4,22 @@ def repoUrl = "https://github.com/thevictorgreen/nodemicro.git"; //Repository Ur
 folder("ProjectFolder") {
   displayName('ProjectFolder');
   description('Folder for Projects);
-}
 
-pipelineJob("NodeMicro") { //JobName
-  description("NodeJS Micro Service");
-  definition {
-    cpsScm {
-      scriptPath("app/JenkinsFile"); //Path to Build Script
-      scm {
-        git {
-          remote {
-            url(repoUrl); //Git Repository
-            branch("master");
+  pipelineJob("NodeMicro") { //JobName
+    description("NodeJS Micro Service");
+    definition {
+      cpsScm {
+        scriptPath("app/JenkinsFile"); //Path to Build Script
+        scm {
+          git {
+            remote {
+              url(repoUrl); //Git Repository
+              branch("master");
+            }
           }
         }
       }
     }
   }
+
 }

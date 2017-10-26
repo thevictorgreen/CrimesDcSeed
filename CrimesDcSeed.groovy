@@ -3,7 +3,7 @@ def repoUrl = "https://github.com/thevictorgreen/nodemicro.git"; //Repository Ur
 
 folder("ProjectFolder") {
   displayName('ProjectFolder');
-  description('Folder for Projects);
+  description('Folder for Projects');
 
   pipelineJob("NodeMicro") { //JobName
     description("NodeJS Micro Service");

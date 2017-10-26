@@ -26,6 +26,9 @@ pipelineJob(basePath + "/NodeMicro") { //JobName
           }
         }
       }
+      triggers {
+        scm('H/5 * * * *');
+      }
     }
   }
 }

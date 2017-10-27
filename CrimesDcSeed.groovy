@@ -17,7 +17,7 @@ pipelineJob(basePath + "/NodeMicro") { //JobName
   description("NodeJS Micro Service");
   definition {
     cpsScm {
-      scriptPath("JenkinsFile"); //Path to Build Script
+      scriptPath("Jenkinsfile"); //Path to Build Script
       scm {
         git {
           remote {
